@@ -30,7 +30,6 @@ export default function Home() {
     setLoading(true);
 
     try {
-      // Bate na nossa API Python rodando localmente
       const response = await fetch(
         "https://nology-backend.onrender.com/calcular",
         {
@@ -57,7 +56,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans p-8 flex flex-col items-center">
       <div className="w-full max-w-4xl mt-10">
-        {/* Cabeçalho */}
+        {/* cabeçalho */}
         <div className="mb-10 text-center">
           <h1 className="text-3xl font-bold tracking-tight text-white mb-2">
             Nology Cashback
@@ -68,7 +67,7 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* LADO ESQUERDO: Formulário e Resultado */}
+          {/* formulário e resultado */}
           <div className="flex flex-col gap-6">
             <div className="bg-zinc-900 border border-zinc-800 p-6 rounded-xl shadow-lg">
               <h2 className="text-xl font-semibold mb-4 border-b border-zinc-800 pb-2">
@@ -130,7 +129,7 @@ export default function Home() {
               </form>
             </div>
 
-            {/* Card de Resultado */}
+            {/* card de Resultado */}
             {resultado && (
               <div className="bg-indigo-950/30 border border-indigo-900/50 p-6 rounded-xl shadow-lg animate-fade-in">
                 <h2 className="text-lg font-semibold text-indigo-300 mb-3">
@@ -168,7 +167,7 @@ export default function Home() {
             )}
           </div>
 
-          {/* LADO DIREITO: Histórico */}
+          {/* Historico */}
           <div className="bg-zinc-900 border border-zinc-800 p-6 rounded-xl shadow-lg flex flex-col max-h-[600px]">
             <h2 className="text-xl font-semibold mb-4 border-b border-zinc-800 pb-2">
               Seu Histórico (IP Atual)
