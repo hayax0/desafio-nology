@@ -31,15 +31,18 @@ export default function Home() {
 
     try {
       // Bate na nossa API Python rodando localmente
-      const response = await fetch("http://127.0.0.1:8000/calcular", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          valor_compra: parseFloat(valorCompra),
-          cupom_desconto_pct: parseFloat(cupomPct),
-          is_vip: isVip,
-        }),
-      });
+      const response = await fetch(
+        "https://nology-backend.onrender.com/calcular",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            valor_compra: parseFloat(valorCompra),
+            cupom_desconto_pct: parseFloat(cupomPct),
+            is_vip: isVip,
+          }),
+        },
+      );
 
       const data = await response.json();
       setResultado(data.calculo_atual);
