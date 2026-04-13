@@ -1,3 +1,6 @@
+# Link do Projeto Online
+https://nology-cashback-caio.vercel.app/
+
 # Nology Cashback API & Dashboard
 
 Este projeto foi desenvolvido como resolução do desafio técnico Full Stack para a Nology.
@@ -43,14 +46,13 @@ Bash
 uvicorn main:app --reload
 A API ficará escutando em http://127.0.0.1:8000.
 
-2. Configurando o Frontend (Interface)
-Abra uma nova aba no terminal, navegue até a pasta frontend e rode o Next.js:
+### 2. Configurando o Frontend (Interface)
+Abra uma nova aba no terminal, navegue até a pasta `frontend` e rode o Next.js:
 
-Bash
+```bash
 cd frontend
 npm install
 npm run dev
 Acesse http://localhost:3000 no navegador para utilizar a calculadora.
 
 Desenvolvido por Caio Campos.
-```
