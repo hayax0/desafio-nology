@@ -53,6 +53,6 @@ Abra uma nova aba no terminal, navegue até a pasta `frontend` e rode o Next.js:
 cd frontend
 npm install
 npm run dev
-Acesse http://localhost:3000 no navegador para utilizar a calculadora.
+Acesse http://localhost:3000 no navegador para utilizar o programa.
 
 Desenvolvido por Caio Campos.
